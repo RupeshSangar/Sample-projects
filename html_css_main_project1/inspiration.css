@@ -1,0 +1,1092 @@
+*{
+    box-sizing: border-box;
+}
+
+*::selection{
+    background: #BB5644;
+    color: #FDF7F2;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    /* height: max-content;
+    width: auto; */
+    background-color: #FDF7F2;
+}
+
+/* common  */
+.h2{
+    font-size: 42px;
+    font-family: 'Bodoni Moda', -apple-system, BlinkMacSystemFont,sans-serif;
+    margin: 0;
+    color: #2e2d36;
+}
+
+.h5{
+    font-size: 20px;
+    font-family: 'Jost',-apple-system, BlinkMacSystemFont,sans-serif;
+    margin: 0;
+    font-weight: 100;
+    color: #4E4540;
+}
+
+.h6{
+    display: flex;
+    font-size: 14px;
+    font-family: 'Jost',-apple-system, BlinkMacSystemFont,sans-serif;
+    margin: 0;
+    color: #BB5644;
+}
+
+
+.btn{
+    background: #BB5644;
+    color: #FEF1EB;
+    border: none;
+    font-family: 'Jost', -apple-system, BlinkMacSystemFont,sans-serif;
+    padding: 15px 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.para{
+    font-family: 'Jost',-apple-system, BlinkMacSystemFont,sans-serif;
+    font-size: 16px;
+    /* margin-top: 0; */
+    margin-bottom: 15px;
+    color: #626262;
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    font-size: 16px;
+    font-family: 'Jost',-apple-system, BlinkMacSystemFont,sans-serif;
+    color: #4E4540;
+    text-decoration: none;
+}
+
+/* header start  */
+
+#header{
+    /* border: 1px solid red; */
+    background-color: #FDF7F2;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    height: auto;
+    top: 0;
+    z-index: 1000;
+}
+
+#header ul{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0px;
+}
+
+#header ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 20px;
+    position: relative;
+    margin: 0;
+}
+
+
+#header ul li:first-child:hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    margin-bottom: -20px;
+    background: #BB5644;
+}
+
+#header ul li:nth-child(3)::after{
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 85%;
+    height: 4px;
+    margin-bottom: -20px;
+    background: #BB5644;
+}
+
+
+#header ul li a{
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    color: #BB5644;
+}
+
+
+#header ul li:hover::after{
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 85%;
+    height: 4px;
+    margin-bottom: -20px;
+    background: #BB5644;
+    /* border-bottom: 1px solid red; */
+}
+
+/* navbar logo  */
+#header img{
+    /* border: 1px solid green; */
+    width: 60px;
+    margin-right: 250px;
+    align-self: center;
+}
+
+/* navbar shopping cart  */
+#header .top-bar{
+    /* border: 1px solid brown; */
+    align-self: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+#header .top-bar p{
+    display: inline-block;
+    color: #BB5644;
+    font-size: 18px;
+    font-family: 'Jost';
+    font-weight: bold;
+}
+
+#header .top-bar .icon{
+    color: #BB5644;
+    padding: 0px 7px;
+    font-size: 18px;
+}
+#header .top-bar #icon{
+    display: none;
+}
+
+a .line{
+    display: none;
+}
+
+/* header end  */
+
+/* contact container  start */
+#inspiration{
+    /* border: 1px solid red; */
+    height: 500px;
+    margin-bottom: 117px;
+}
+
+.inspiration-title img{
+    margin-right: 10px;
+}
+
+.inspiration-title{
+    /* border: 1px solid purple; */
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inspiration-title .h6{
+    padding-top: 20px;
+    color: #BB5644;
+    text-align: center;
+    font-weight: 580;
+    line-height: 1.2;
+}
+
+.inspiration-title h1{
+    font-size: 80px;
+    font-family: 'Bodoni Moda', serif;
+    margin: 0;
+    color: #BB5644;
+    letter-spacing: 7px;
+}
+
+.jane{
+    height: 416px;
+    margin: 275px 235px 0;
+    width: 67%;
+    /* background-color: white; */
+    display: flex;
+    /* position: absolute; */
+}
+
+.jane .jane-text{
+    display: flex;
+}
+
+.jane .jane-text1{
+    padding: 0 0 0 85px;
+}
+
+
+.jane .jane-text .watson .jane-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.jane .jane-text .jane-img h4{
+    font-size: 26px;
+    font-family: 'Bodoni Moda', -apple-system, BlinkMacSystemFont,sans-serif;
+    margin: 0 25px 0 0;
+    color: #4E4540;
+}
+
+.jane .jane-text .jane-img img{
+    height: 43px;
+    width: 48px;
+    margin-right: 10px;
+}
+
+.jane .jane-text .watson .jane-sign{
+    text-align: right;
+    margin-top: 80px;
+}
+
+.jane .jane-text .jane-sign img{
+    height: fit-content;
+    width: 165px;
+}
+
+.jane .jane-text img{
+    height: 383px;
+    width: 343px;
+}
+
+.inspiration-poster{
+    /* border: 1px solid red; */
+    height: 800px;
+    margin: 29px 0 20px;
+}
+
+
+.number .h2{
+    width: 100%;
+    position: absolute;
+    /* border: 1px solid red; */
+    font-size: 261px;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    top: -125px;
+    /* right: 0; */
+    left: 50px;
+}
+
+.number .o2{
+    width: 100%;
+    position: absolute;
+    /* border: 1px solid red; */
+    font-size: 261px;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    top: -125px;
+    /* right: 0; */
+    left: -52px;
+}
+
+
+.poster{
+    height: 700px;
+    margin: 0px 190px 0;
+    width: 73%;
+    /* background-color: white; */
+    display: flex;
+    padding: 50px 0;
+    position: relative;
+    /* position: absolute; */
+}
+
+.poster-img img{
+    height: 690px;
+    width: 636px;
+}
+
+.poster-text{
+    display: flex;
+}
+
+.poster-text1{
+    padding: 114px 0px 30px 96px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.poster-text2{
+    padding: 114px 96px 30px 0;
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; */
+}
+
+.poster-text1 .h2{
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+
+.poster-text1 .para{
+    margin: 0;
+    padding-bottom: 0px;
+}
+
+.offer-btn{
+    display: block;
+    background-color: #BB5644;
+    padding: 10px 30px;
+    margin: 77px 0 0;
+    border: 1px solid #BB5644;
+    align-self: start;
+}
+
+.poster-text1 .offer-btn:hover{
+    background: none;
+    border:1px solid #BB5644;
+    cursor: pointer;
+
+}
+
+.poster-text1 .offer-btn:hover a{
+    color: #BB5644;
+}
+
+.poster-text1 .offer-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    /* text-transform: capitalize; */
+    font-family: 'Jost';
+    /* font-weight: bold; */
+}
+
+
+
+
+#brand{
+    /* border: 1px solid red; */
+    height: auto;
+    width: auto;
+    padding: 100px 0;
+}
+
+.registration{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* margin: 0 0 100px; */
+}
+
+.registration .register{
+    border: 1px solid #F0E1D4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width:75%;
+    position: relative;
+}
+
+.register .leaf{
+    position: absolute;
+    top: -64px;
+}
+
+.register .h6{
+    text-align: center;
+}
+
+.register .h6 img{
+    margin-right: 10px;
+}
+
+.register h3{
+    font-size: 32px;
+    font-family: 'Bodoni Moda', -apple-system, BlinkMacSystemFont, sans-serif;
+    /* margin: 0; */
+    color: #4E4540;
+    text-align: center;
+}
+
+.register h3 span{
+    color: #BB5644;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.signup input[type=email]{
+    border: none;
+    border-bottom: 1px solid #4E433E;
+    background: none;
+    width: 25%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.signup input[type=email]:focus{
+    outline: none;
+}
+
+.signup .btn{
+    border: 1px solid #BB5644;
+    padding: 10px 50px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.signup .btn:hover{
+    border: 1px solid #BB5644;
+    color: #BB5644;
+    background: none;
+}
+
+/* brand and registration end  */
+
+/* gallery start  */
+#gallery{
+    display: flex;
+    justify-content: center;
+}
+
+#gallery a img{
+    height: 227px;
+    width: 227px;
+}
+
+
+/* gallery end  */
+
+/* contact start  */
+
+#contact{
+    /* border: 1px solid red; */
+    padding: 70px 0;
+}
+
+.contact{
+    display: flex;
+    margin: 0 210px;
+    justify-content: center;
+}
+
+.contact-details{
+    /* border: 1px solid purple; */
+    height: 400px;
+    width: 270px;
+    padding: 35px 15px;
+    /* margin: 0px 7px; */
+}
+
+.contact-details .contact-text{
+    /* border: 1px solid red; */
+    margin-bottom: 80px;
+}
+
+
+.contact-details .contact-text2{
+    /* border: 1px solid purple; */
+    margin-bottom: 30px;
+}
+
+.contact-text .para{
+    margin-top: 0;
+}
+
+.contact-text .btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-text .btn{
+    border: 1px solid #BB5644;
+    padding: 12px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-text .btn:hover a{
+    color: #BB5644;
+}
+
+.contact-text .btn:hover{
+    border: 1px solid #BB5644;
+    /* color: #BB5644; */
+    background: none;
+    /* cursor: pointer; */
+}
+
+.contact-text h5{
+    margin-bottom: 15px;
+}
+
+.contact-text ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact-text ul li a:hover{
+    color: #BB5644;
+    text-decoration: underline;
+}
+
+.ul-contact li a{
+    font-size: 20px;
+}
+
+.contact-text .ul-contact li a:hover{
+    /* color: #F0E1D4; */
+    text-decoration: none;
+}
+
+.contact-text .para{
+    color: #4E4540;
+}
+
+/* contact end  */
+
+/* footer start  */
+#footer{
+    /* border: 1px solid red; */
+    /* height: 100px; */
+    width: 100%;
+}
+
+.footer{
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 210px;
+}
+
+.footer .copy{
+    margin: 0 0 20px;
+    padding: 30px 0 0;
+}
+
+.footer .copy .para{
+    margin: 0;
+}
+
+.footer .copy a:hover{
+    text-decoration: underline;
+    color: #BB5644;
+}
+
+.footer .top-footer{
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background: #BB5644;
+    /* padding: 50px; */
+}
+
+.footer .top-footer  a{
+    font-size: 25px;
+    font-weight: 200;
+    color: white;
+}
+/* footer end  */
+
+
+/* media query start  */
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        width: 100%;
+        background-color: #FDF7F2;
+    }
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #header ul{
+        display: none;
+    }
+
+    #header a{
+        /* border: 1px solid blue; */
+        display: flex;
+        margin: 0;
+        margin-right: 1rem;
+    }
+    #header a .line{
+        display: block;
+        font-size: 1.875rem;
+        color: #BB5644;
+        align-self: center;
+    }
+
+    #header img{
+        width: 2.5rem;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    #header .top-bar{
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        padding: 0 10px;
+        background-color: #FDF7F2;
+        width: 100vw;
+        border: 1px solid #ddcdc6;
+        box-shadow: 0px 0px 10px -5px #2e2d36;
+        z-index: 8849;
+    }
+
+    #header .top-bar p{
+        display: none;
+    }
+
+    #header .top-bar .icon{
+        font-size: 1.875rem;
+        padding: 1.25rem;
+    }
+
+    
+    #header .top-bar #icon{
+        display: block; 
+        font-size: 1.875rem;
+        padding: 1.25rem; 
+        color: #BB5644;
+    }
+
+    /* inspiration start  */
+
+    #inspiration{
+        /* border: 1px solid red; */
+        height: 250px;
+        width: 100%;
+    }
+
+
+    .inspiration-title img{
+        margin-right: 0.625rem;
+    }
+
+    .inspiration-title{
+        /* border: 1px solid navy; */
+        /* position: absolute; */
+        /* top: 47px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inspiration-title .h6{
+        padding-top: 1rem;
+        color: #BB5644;
+        text-align: center;
+        font-weight: 580;
+        line-height: 1.2;
+    }
+
+    .inspiration-title h1{
+        font-size: 2.5rem;
+        font-family: 'Bodoni Moda', -apple-system, BlinkMacSystemFont, sans-serif;
+        margin: 0;
+        color: #BB5644;
+        letter-spacing: 2px;
+    }
+
+
+    .jane{
+        /* height: 416px; */
+        height: auto;
+        margin: 200px auto 0;
+        width: 85%;
+        /* background-color: white; */
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+        /* position: absolute; */
+    }
+    
+    .jane .jane-text{
+        display: flex;
+    }
+    
+    .jane .jane-text1{
+        padding: 0;
+    }
+    
+    
+    .jane .jane-text .watson .jane-img{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .jane .jane-text .jane-img h4{
+        font-size: 1.625rem;
+        font-family: 'Bodoni Moda', -apple-system, BlinkMacSystemFont,sans-serif;
+        margin: 0 25px 0 0;
+        color: #4E4540;
+    }
+    
+    .jane .jane-text .jane-img img{
+        height: 35px;
+        width: 48px;
+        margin-right: 10px;
+    }
+    
+    .jane .jane-text .watson .jane-sign{
+        display: flex;
+        flex-direction: column;
+        /* margin-left: 30px; */
+        margin-top: 20px;
+    }
+
+    .watson .jane-sign .para{
+        text-align: right;
+        margin-right: 30px;
+    }
+    
+    .jane .jane-text .jane-sign img{
+        height: 47.41px;
+        width: 165px;
+        align-self: center;
+    }
+    
+    .jane .jane-text img{
+        height: 283.63px;
+        width: 254px;
+    }
+
+    .inspiration-poster{
+        /* border: 2px solid purple; */
+        height: auto;
+        margin: 1000px 0 0px;
+    }
+    .inspiration-poster1{
+        /* border: 2px solid purple; */
+        height: auto;
+        margin: 0px 0 20px;
+    }
+    
+    
+    .number .h2{
+        height: 96px;
+        width: 101.19px;
+        position: absolute;
+        /* border: 1px solid red; */
+        font-size: 96px;
+        color: white;
+        text-align: center;
+        z-index: -1;
+        top: 0;
+        /* right: 0; */
+        left: 190px;
+    }
+    
+    .number .o2{
+        width: 100%;
+        position: absolute;
+        /* border: 1px solid red; */
+        font-size: 96px;
+        color: white;
+        text-align: center;
+        z-index: -1;
+        top: -11px;
+        /* right: 0; */
+        left: -83px;
+    }
+    
+    
+    .poster{
+        /* border: 1px solid red; */
+        height: auto;
+        width: 100%;
+        /* background-color: white; */
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0px;
+        margin: 0 auto;
+        position: relative;
+        /* position: absolute; */
+    }
+
+    .poster1{
+        flex-direction: column-reverse;
+    }
+    
+    .poster-img img{
+        height: 210.16px;
+        width: 194px;
+    }
+    
+    .poster-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .poster-text1{
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .poster-text2{  
+        padding: 20px 0 0;
+    }
+    
+    .poster-text1 .h2{
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 10px 0 20px;
+    }
+    
+    
+    .poster-text1 .para{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0 30px;
+        padding-bottom: 0px;
+    }
+    
+    .offer-btn{
+        display: block;
+        background-color: #BB5644;
+        padding: 10px 30px;
+        margin: 40px auto 0;
+        border: 1px solid #BB5644;
+        align-self: center;
+    }
+    
+    .poster-text1 .offer-btn:hover{
+        background: none;
+        border:1px solid #BB5644;
+        cursor: pointer;
+    
+    }
+    
+    .poster-text1 .offer-btn:hover a{
+        color: #BB5644;
+    }
+    
+    .poster-text1 .offer-btn a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        /* text-transform: capitalize; */
+        font-family: 'Jost';
+        /* font-weight: bold; */
+    }
+    
+
+
+            
+    #brand{
+        /* border: 1px solid navy; */
+        height: auto;
+        width: auto;
+        padding: 50px 0;
+    }
+
+    .registration{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        /* margin: 0 0 100px; */
+    }
+
+    .registration .register{
+        border: 1px solid #F0E1D4;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 450px;
+        width:85%;
+        position: relative;
+    }
+
+    .register .leaf{
+        position: absolute;
+        top: -64px;
+    }
+
+    .register .h6{
+        font-size: 0.875rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .register .h6 img{
+        margin-right: 10px;
+    }
+
+    .register h3{
+        font-size: 2rem;
+        font-family: 'Bodoni Moda', -apple-system, BlinkMacSystemFont, sans-serif;
+        margin: 0;
+        color: #4E4540;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .register h3 span{
+        color: #BB5644;
+    }
+
+    .signup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .signup input[type=email]{
+        border: none;
+        border-bottom: 1px solid #4E433E;
+        background: none;
+        width: 92%;
+        padding: 10px;
+        margin: 0 10px 20px;
+    }
+
+    .signup input[type=email]:focus{
+        outline: none;
+    }
+
+    .signup .btn{
+        border: 1px solid #BB5644;
+        padding: 10px 50px;
+        color: white;
+        width: 92%;
+        margin: 0 auto;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .signup .btn:hover{
+        border: 1px solid #BB5644;
+        color: #BB5644;
+        background: none;
+    }
+
+    /* brand and registration end  */
+
+
+    /* gallery start  */
+    #gallery{
+        /* border: 1px solid navy; */
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        align-items: center;
+        position: relative;
+        z-index: 50;
+        margin-top: 0px;
+    }
+
+    
+    #gallery a img{
+        height: 287.02px;
+        width: 288px;
+    }
+
+
+    /* gallery end  */
+
+    /* contact start  */
+
+    #contact{
+        /* border: 1px solid red; */
+        padding: 70px 0;
+    }
+
+    .contact{
+        display: flex;
+        margin: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-details{
+        /* border: 1px solid purple; */
+        height: auto;
+        width: 254px;
+        padding: 35px 15px 0;
+        text-align: center;
+        /* margin: 0px 7px; */
+    }
+
+    .contact-details .contact-text{
+        /* border: 1px solid red; */
+        margin-bottom: 50px;
+    }
+
+
+    /* contact end  */
+
+    /* footer start  */
+    #footer{
+        /* border: 1px solid red; */
+        height: 280px;
+        width: 100%;
+    }
+
+    .footer{
+        /* border: 1px solid purple; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0 0px; 
+        width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer .copy{
+        margin: 0 0 20px;
+        padding: 30px 0 0;
+        text-align: center;
+    }
+    /* footer end  */
+
+}

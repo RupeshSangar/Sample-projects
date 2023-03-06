@@ -1,0 +1,1032 @@
+*{
+    box-sizing: border-box;
+}
+
+*::selection{
+    background: #BB5644;
+    color: #FDF7F2;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    /* height: max-content;
+    width: auto; */
+    background-color: #FDF7F2;
+}
+
+/* common  */
+.h2{
+    font-size: 42px;
+    font-family: 'Bodoni Moda', -apple-system, BlinkMacSystemFont,sans-serif;
+    margin: 0;
+    color: #2e2d36;
+}
+
+.h5{
+    font-size: 20px;
+    font-family: 'Jost',-apple-system, BlinkMacSystemFont,sans-serif;
+    margin: 0;
+    font-weight: 100;
+    color: #4E4540;
+}
+
+.h6{
+    display: flex;
+    font-size: 14px;
+    font-family: 'Jost',-apple-system, BlinkMacSystemFont,sans-serif;
+    margin: 0;
+    color: #BB5644;
+}
+
+
+.btn{
+    background: #BB5644;
+    color: #FEF1EB;
+    border: none;
+    font-family: 'Jost', -apple-system, BlinkMacSystemFont,sans-serif;
+    padding: 15px 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.para{
+    font-family: 'Jost',-apple-system, BlinkMacSystemFont,sans-serif;
+    font-size: 16px;
+    /* margin-top: 0; */
+    margin-bottom: 15px;
+    color: #626262;
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    font-size: 16px;
+    font-family: 'Jost',-apple-system, BlinkMacSystemFont,sans-serif;
+    color: #4E4540;
+    text-decoration: none;
+}
+
+/* header start  */
+
+#header{
+    /* border: 1px solid red; */
+    background-color: #FDF7F2;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    height: auto;
+    top: 0;
+    z-index: 1000;
+}
+
+#header ul{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0px;
+}
+
+#header ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 20px;
+    position: relative;
+    margin: 0;
+}
+
+
+#header ul li:first-child:hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    margin-bottom: -20px;
+    background: #BB5644;
+}
+
+#header ul li:last-child::after{
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 85%;
+    height: 4px;
+    margin-bottom: -20px;
+    background: #BB5644;
+}
+
+
+#header ul li a{
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    color: #BB5644;
+}
+
+
+#header ul li:hover::after{
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 85%;
+    height: 4px;
+    margin-bottom: -20px;
+    background: #BB5644;
+    /* border-bottom: 1px solid red; */
+}
+
+/* navbar logo  */
+#header img{
+    /* border: 1px solid green; */
+    width: 60px;
+    margin-right: 250px;
+    align-self: center;
+}
+
+/* navbar shopping cart  */
+#header .top-bar{
+    /* border: 1px solid brown; */
+    align-self: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+#header .top-bar p{
+    display: inline-block;
+    color: #BB5644;
+    font-size: 18px;
+    font-family: 'Jost';
+    font-weight: bold;
+}
+
+#header .top-bar .icon{
+    color: #BB5644;
+    padding: 0px 7px;
+    font-size: 18px;
+}
+#header .top-bar #icon{
+    display: none;
+}
+
+a .line{
+    display: none;
+}
+
+/* header end  */
+
+/* contact container  start */
+#contactus{
+    /* border: 1px solid red; */
+    height: 1495px;
+}
+
+.contact-title img{
+    margin-right: 10px;
+}
+
+.contact-title{
+    /* border: 1px solid purple; */
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title .h6{
+    padding-top: 20px;
+    color: #BB5644;
+    text-align: center;
+    font-weight: 580;
+    line-height: 1.2;
+}
+
+.contact-title h1{
+    font-size: 80px;
+    font-family: 'Bodoni Moda', serif;
+    margin: 0;
+    color: #BB5644;
+    letter-spacing: 7px;
+}
+
+
+
+#offer{
+    height: 500px;
+    width: 90%;
+    position: relative;
+    left: 75px;
+}
+
+.offer-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:-100px;
+    /* border: 1px solid yellow; */
+    /* box-sizing: border-box; */
+    width: 100%;
+}
+
+.offer-container .offer-text{
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.offer-container .offer-text .offer-text1{
+    text-align: right;
+}
+
+.offer-container .offer-text .offer-text1 h5{
+    margin-bottom: 50px;
+}
+
+.offer-container .offer-text .offer-text1 p{
+    margin-bottom: 50px;
+}
+
+.offer-container .offer-text .offer-text2{
+    /* border: 1px solid white; */
+    text-align: left;
+    margin-bottom: 50px;
+    /* width: auto; */
+}
+
+
+.offer-container .offer-image{
+    /* border: 1px solid violet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.offer-container .offer-image h5{
+    margin-bottom: 50px;
+}
+
+.offer-container .offer-image a{
+    font-size: 44px;
+    color: #2e2d36;
+    text-decoration: none;
+    font-family: 'Bodoni Moda';
+    font-weight: 600;
+}
+
+.offer-container .offer-image .no{
+    font-size: 26px;
+    color: #2e2d36;
+    text-decoration: none;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.offer-btn{
+    display: block;
+    background-color: #FDF7F2;
+    padding: 10px 30px;
+    margin: 0 0 0 20px;
+    border: 1px solid #BB5644;
+    /* align-self: start; */
+}
+
+.offer-text .offer-btn:hover{
+    background: #BB5644;
+    border:1px solid #BB5644;
+    cursor: pointer;
+
+}
+
+.offer-text .offer-btn:hover a{
+    color: #FDF7F2;
+}
+
+.offer-text .offer-btn a{
+    text-decoration: none;
+    color: #BB5644;
+    font-size: 15px;
+    /* text-transform: capitalize; */
+    font-family: 'Jost';
+    /* font-weight: bold; */
+}
+
+/* offer end  */
+
+/* about collection start  */
+.about-collection{
+    height: 700px;
+    margin: 190px 213px;
+    width: 73%;
+    background-color: white;
+    position: absolute;
+}
+
+.collection-img{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid greenyellow; */
+    position: absolute;
+    width: 100%;
+    top: -51px;
+}
+
+#collection-content{
+    /* border: 1px solid red; */
+    height: 700px;
+    width: 100%;
+    display: flex;
+}
+
+.about-container{
+    width: 50%;
+    padding: 60px;
+}
+
+.about-container h3{
+    margin: 0 0 50px;
+    font-size: 32px;
+    font-family: 'Bodoni Moda', serif;
+    color: #4E4540;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+form input[type=email]{
+    border: none;
+    border-bottom: 1px solid #4E433E;
+    background: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type=email]:focus{
+    outline: none;
+}
+form input[type=text]{
+    border: none;
+    border-bottom: 1px solid #4E433E;
+    background: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type=text]:focus{
+    outline: none;
+}
+
+form textarea{
+    border: none;
+    border-bottom: 1px solid #4E433E;
+    background: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+form textarea:focus{
+    outline: none;
+}
+
+form .btn{
+    border: 1px solid #BB5644;
+    padding: 10px 50px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form .btn:hover{
+    border: 1px solid #BB5644;
+    color: #BB5644;
+    background: none;
+}
+
+
+.content-img {
+    /* border: 1px solid firebrick; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 500px; */
+}
+
+.content-img .about-pic {
+    /* border: 1px solid firebrick; */
+    background: url('img/jeweler2-gallery-pic1.png');
+    background-position: bottom;
+    background-size: cover;
+    width: 480px;
+    height: 594px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+
+
+/* gallery start  */
+#gallery{
+    display: flex;
+    justify-content: center;
+}
+
+#gallery a img{
+    height: 227px;
+    width: 227px;
+}
+
+
+/* gallery end  */
+
+/* contact start  */
+
+#contact{
+    /* border: 1px solid red; */
+    padding: 70px 0;
+}
+
+.contact{
+    display: flex;
+    margin: 0 210px;
+    justify-content: center;
+}
+
+.contact-details{
+    /* border: 1px solid purple; */
+    height: 400px;
+    width: 270px;
+    padding: 35px 15px;
+    /* margin: 0px 7px; */
+}
+
+.contact-details .contact-text{
+    /* border: 1px solid red; */
+    margin-bottom: 80px;
+}
+
+
+.contact-details .contact-text2{
+    /* border: 1px solid purple; */
+    margin-bottom: 30px;
+}
+
+.contact-text .para{
+    margin-top: 0;
+}
+
+.contact-text .btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-text .btn{
+    border: 1px solid #BB5644;
+    padding: 12px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-text .btn:hover a{
+    color: #BB5644;
+}
+
+.contact-text .btn:hover{
+    border: 1px solid #BB5644;
+    /* color: #BB5644; */
+    background: none;
+    /* cursor: pointer; */
+}
+
+.contact-text h5{
+    margin-bottom: 15px;
+}
+
+.contact-text ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact-text ul li a:hover{
+    color: #BB5644;
+    text-decoration: underline;
+}
+
+.ul-contact li a{
+    font-size: 20px;
+}
+
+.contact-text .ul-contact li a:hover{
+    /* color: #F0E1D4; */
+    text-decoration: none;
+}
+
+.contact-text .para{
+    color: #4E4540;
+}
+
+/* contact end  */
+
+/* footer start  */
+#footer{
+    /* border: 1px solid red; */
+    /* height: 100px; */
+    width: 100%;
+}
+
+.footer{
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 210px;
+}
+
+.footer .copy{
+    margin: 0 0 20px;
+    padding: 30px 0 0;
+}
+
+.footer .copy .para{
+    margin: 0;
+}
+
+.footer .copy a:hover{
+    text-decoration: underline;
+    color: #BB5644;
+}
+
+.footer .top-footer{
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background: #BB5644;
+    /* padding: 50px; */
+}
+
+.footer .top-footer  a{
+    font-size: 25px;
+    font-weight: 200;
+    color: white;
+}
+/* footer end  */
+
+
+
+/* media query start  */
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        width: 100%;
+        background-color: #FDF7F2;
+    }
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+        /* width: 100%; */
+        /* border: 1px solid red; */
+    }
+
+    #header ul{
+        display: none;
+    }
+
+    #header a{
+        /* border: 1px solid blue; */
+        display: flex;
+        margin: 0;
+        margin-right: 1rem;
+    }
+    #header a .line{
+        display: block;
+        font-size: 1.875rem;
+        color: #BB5644;
+        align-self: center;
+    }
+
+    #header img{
+        width: 2.5rem;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    #header .top-bar{
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        padding: 0 10px;
+        background-color: #FDF7F2;
+        width: 100vw;
+        border: 1px solid #ddcdc6;
+        box-shadow: 0px 0px 10px -5px #2e2d36;
+        z-index: 8849;
+    }
+
+    #header .top-bar p{
+        display: none;
+    }
+
+    #header .top-bar .icon{
+        font-size: 1.875rem;
+        padding: 1.25rem;
+    }
+
+    
+    #header .top-bar #icon{
+        display: block; 
+        font-size: 1.875rem;
+        padding: 1.25rem; 
+        color: #BB5644;
+    }
+
+    /* contact details start  */
+
+    #contactus{
+        /* border: 1px solid red; */
+        height: 300px;
+        /* height: 1050px; */
+        max-width: auto;
+    }
+
+
+    .contact-title img{
+        margin-right: 0.625rem;
+    }
+
+    .contact-title{
+        /* border: 1px solid navy; */
+        /* position: absolute; */
+        /* top: 47px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-title .h6{
+        padding-top: 1rem;
+        color: #BB5644;
+        text-align: center;
+        font-weight: 580;
+        line-height: 1.2;
+    }
+
+    .contact-title h1{
+        font-size: 2.625rem;
+        font-family: 'Bodoni Moda', serif;
+        margin: 0;
+        color: #BB5644;
+        letter-spacing: 2px;
+    }
+
+
+    /* offer start  */
+    #offer{
+        /* border: 1px solid rebeccapurple; */
+        height: 500px;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 200px;
+    }
+
+    .offer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        bottom: 0px;
+        top: 250px;
+        /* border: 1px solid yellow; */
+        /* box-sizing: border-box; */
+        width: 100%;
+        text-align: center;
+    }
+
+    .offer-container .offer-text{
+        /* border: 1px solid grey; */
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+    }
+
+    .offer-container .offer-text .offer-text1{
+        text-align: center;
+    }
+
+    .offer-container .offer-text .offer-text1 h5{
+        margin-bottom: 20px;
+    }
+
+    .offer-container .offer-text .offer-text1 p{
+        margin-bottom: 20px;
+    }
+
+    .offer-container .offer-text .offer-text2{
+        /* border: 1px solid white; */
+        text-align: center;
+        margin-bottom: 0px;
+        /* width: auto; */
+    }
+
+
+    .offer-container .offer-image{
+        /* border: 1px solid violet; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 45px;
+    }
+
+    .offer-container .offer-image h5{
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+    }
+
+    .offer-container .offer-image a{
+        font-size: 2rem;
+        color: #2e2d36;
+        text-decoration: none;
+        font-family: 'Bodoni Moda',-apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .offer-container .offer-image .no{
+        font-size: 1.625rem;
+        color: #4E4540;
+        text-decoration: none;
+        font-family: 'Bodoni Moda', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .offer-btn{
+        display: block;
+        background-color: #FDF7F2;
+        padding: 10px 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #BB5644;
+        /* align-self: start; */
+    }
+
+    .offer-text .offer-btn:hover{
+        background: #BB5644;
+        border:1px solid #BB5644;
+        cursor: pointer;
+
+    }
+
+    .offer-text .offer-btn:hover a{
+        color: #FDF7F2;
+    }
+
+    .offer-text .offer-btn a{
+        text-decoration: none;
+        color: #BB5644;
+        font-size: 0.938rem;
+        /* text-transform: capitalize; */
+        font-family: 'Jost';
+        /* font-weight: bold; */
+    }
+
+    /* offer end  */
+
+    /* about collection start  */
+    .about-collection{
+        height: 880px;
+        /* margin: 190px 213px; */
+        margin: 0 auto;
+        width: 80%;
+        background-color: white;
+        position: relative;
+        top: 488px;
+    }
+
+    .collection-img{
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid greenyellow; */
+        position: absolute;
+        width: 100%;
+        top: -51px;
+    }
+
+    #collection-content{
+        /* border: 1px solid red; */
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-container{
+        width: 100%;
+        padding: 20px 12px 40px;
+    }
+
+    .about-container h3{
+        margin: 0 0 40px;
+        font-size: 2rem;
+        font-family: 'Bodoni Moda',-apple-system, BlinkMacSystemFont, sans-serif;
+        color: #4E4540;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    form input[type=email]{
+        border: none;
+        border-bottom: 1px solid #4E433E;
+        background: none;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    form input[type=email]:focus{
+        outline: none;
+    }
+    form input[type=text]{
+        border: none;
+        border-bottom: 1px solid #4E433E;
+        background: none;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    form input[type=text]:focus{
+        outline: none;
+    }
+
+    form textarea{
+        border: none;
+        border-bottom: 1px solid #4E433E;
+        background: none;
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        margin-bottom: 20px;
+        resize: none;
+        box-sizing: border-box;
+    }
+
+    form textarea:focus{
+        outline: none;
+    }
+
+    form .btn{
+        border: 1px solid #BB5644;
+        padding: 10px 50px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    form .btn:hover{
+        border: 1px solid #BB5644;
+        color: #BB5644;
+        background: none;
+    }
+
+
+    .content-img {
+        /* border: 1px solid firebrick; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 500px; */
+    }
+
+    .content-img .about-pic {
+        /* border: 1px solid firebrick; */
+        background: url('img/jeweler2-gallery-pic1.png');
+        background-position: bottom;
+        background-size: cover;
+        width: 228.6px;
+        height: 270.5px;
+        margin-top: 80px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+
+
+    /* gallery start  */
+    #gallery{
+        /* border: 1px solid navy; */
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        align-items: center;
+        position: relative;
+        z-index: 50;
+        margin-top: 1680px;
+    }
+
+    
+    #gallery a img{
+        height: 287.02px;
+        width: 288px;
+    }
+
+
+    /* gallery end  */
+
+    /* contact start  */
+
+    #contact{
+        /* border: 1px solid red; */
+        padding: 70px 0;
+    }
+
+    .contact{
+        display: flex;
+        margin: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-details{
+        /* border: 1px solid purple; */
+        height: auto;
+        width: 254px;
+        padding: 35px 15px 0;
+        text-align: center;
+        /* margin: 0px 7px; */
+    }
+
+    .contact-details .contact-text{
+        /* border: 1px solid red; */
+        margin-bottom: 50px;
+    }
+
+
+    /* contact end  */
+
+    /* footer start  */
+    #footer{
+        /* border: 1px solid red; */
+        height: 280px;
+        width: 100%;
+    }
+
+    .footer{
+        /* border: 1px solid purple; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0 0px; 
+        width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer .copy{
+        margin: 0 0 20px;
+        padding: 30px 0 0;
+        text-align: center;
+    }
+
+
+    /* footer end  */
+
+}

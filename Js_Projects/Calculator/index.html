@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- calculator starts -->
+	<div class="main_div calc">
+		<h1>Calculator</h1>
+		<div class="calc_display" id="disp_div"></div>
+		<div class="btn_row row1">
+			<div class="sub_btn" id="btn_9" onclick="putExpression(9);"><h1>9</h1></div>
+			<div class="sub_btn" id="btn_8" onclick="putExpression(8);"><h1>8</h1></div>
+			<div class="sub_btn" id="btn_7" onclick="putExpression(7);"><h1>7</h1></div>
+			<div class="sub_btn sp_btn" id="btn_pl" onclick="putExpression('+');"><h1>+</h1></div>
+			<div class="sub_btn btn_clear" id="btn_cl" onclick="clear_div();">Clear</div>
+		</div>
+		<div class="btn_row row2">
+			<div class="sub_btn" id="btn_6" onclick="putExpression(6);"><h1>6</h1></div>
+			<div class="sub_btn" id="btn_5" onclick="putExpression(5);"><h1>5</h1></div>
+			<div class="sub_btn" id="btn_4" onclick="putExpression(4);"><h1>4</h1></div>
+			<div class="sub_btn sp_btn" id="btn_min" onclick="putExpression('-');"><h1>-</h1></div>
+		</div>
+		<div class="btn_row row3">
+			<div class="sub_btn" id="btn_3" onclick="putExpression(3);"><h1>3</h1></div>
+			<div class="sub_btn" id="btn_2" onclick="putExpression(2);"><h1>2</h1></div>
+			<div class="sub_btn" id="btn_1" onclick="putExpression(1);"><h1>1</h1></div>
+			<div class="sub_btn sp_btn" id="btn_multi" onclick="putExpression('*');"><h1>*</h1></div>
+		</div>
+		<div class="btn_row row4">
+			<div class="sub_btn sp_btn" id="btn_dec" onclick="putExpression('.');"><h1>.</h1></div>
+			<div class="sub_btn" id="btn_0" onclick="putExpression(0);"><h1>0</h1></div>
+			<div class="sub_btn sp_btn" id="btn_divide" onclick="putExpression('/');"><h1>/</h1></div>
+			<div class="sub_btn sp_btn" id="btn_eq" onclick="put_eq();"><h1>=</h1></div>
+		</div>
+
+	</div>
+<!-- calculator ends -->
+
+
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gimia Fitness Center</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-6.2.0-web/css/all.css">
+</head>
+<body>
+<!--main navbar -->
+<div class="container">
+<div class="nav_flex position-relative">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid nav_container">
+    <div class="logo_div d-flex align-items-center">
+    <img src="img/preload-icon.png" class="img-fluid preload-icon" alt="...">
+    <img src="img/preload-bg.png" class="img-fluid preload-bg" alt="...">
+    <div class="content">
+       <h6 class="ps-1 text-white">Gimia</h6>
+       <h5 class="ps-2 text-red fw-bold">Fitness Center</h5>
+    </div>
+    </div>
+    <button class="navbar-toggler bg-red  shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <i class="fa-solid fa-bars fs-1 text-white"></i>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bold text-red fs-1 fst-italic" id="offcanvasNavbarLabel">Gima Fitness Center</h5>
+        <button type="button" class="btn-close text-reset bg-red" data-bs-dismiss="offcanvas" aria-label="Close"> 
+        <!-- <i class="fa-solid fa-circle-xmark fs-1"></i> -->
+        </button>
+      </div>
+      <div class="offcanvas-body nav_menu d-flex">
+        <ul class="navbar-nav me-auto ms-5 mb-lg-0 d-flex justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+        <form class="d-flex">
+        <div class="call_div d-flex">
+          <i class="fa-solid fa-phone-volume fs-1 text-red"></i>
+          <div class="content">
+            <h6 class="ps-3 white_nav_text">Free Call</h6>
+            <h5 class="ps-2 white_nav_text">+012 3456 789</h5>
+          </div>
+        </div>
+        <button class="btn btn_hover ms-4 border-0 p-0" type="submit" style="background:#F63C25;">
+            <a href="contact.html" class="px-5 py-4 rounded-3 text-white fw-bold fs-6">Contact Us
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+        </button>
+      </form>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+<!-- navbar -->
+
+<!-- <div class="container">
+<div class="nav_flex">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid nav_container">
+    <div class="logo_div d-flex align-items-center">
+    <img src="img/preload-icon.png" class="img-fluid preload-icon" alt="...">
+    <img src="img/preload-bg.png" class="img-fluid preload-bg" alt="...">
+    <div class="content">
+       <h6 class="ps-1 text-dark">Gimia</h6>
+       <h5 class="ps-2 text-danger">Fitness Center</h5>
+    </div>
+    </div>
+    <button class="navbar-toggler bg-danger  shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <i class="fa-solid fa-bars fs-1 text-white"></i>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fs-3 fw-bold" id="offcanvasNavbarLabel">Gima Fitness Center</h5>
+        <button type="button" class="btn-close text-reset bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"> 
+        </button>
+      </div>
+      <div class="offcanvas-body nav_menu">
+        <ul class="navbar-nav me-auto ms-5 mb-lg-0 d-flex justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+        <form class="d-flex">
+        <div class="call_div d-flex">
+          <i class="fa-solid fa-phone-volume fs-1 text-danger"></i>
+          <div class="content">
+            <h6 class="ps-3 text-secondary">Free Call</h6>
+            <h5 class="ps-2">+012 3456 789</h5>
+          </div>
+        </div>
+        <button class="btn btn_hover ms-4 border-0 p-0" type="submit" style="background:#F63C25;">
+            <a href="contact.html" class="px-5 py-4 rounded-3 text-white fw-bold fs-6">Contact Us
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+        </button>
+      </form>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+</div> -->
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Offcanvas navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+</div> -->
+<!--main navbar -->
+<!-- container 1 -->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <!-- <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active btn_2" aria-current="true" aria-label="Slide 1"><span class="fs-3 text-white">1</span></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" class="btn_2" data-bs-slide-to="1" aria-label="Slide 2"><span class="fs-3 text-white">2</span></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" class="btn_2" data-bs-slide-to="2" aria-label="Slide 3"><span class="fs-3 text-white">3</span></button>
+  </div> -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container-fluid both_img">
+          <img src="img/hero4-1.jpg" class="img-fluid bg-img" alt="...">
+          <img src="img/overlay-bg.png" class="img-fluid overlay-bg" alt="...">
+      </div>
+      <div class="carousel-caption d-none d-md-block">
+        <p class="fs-4 fw-bold text-red mb-0 text-decoration-underline">Don't Stop till you drop!</p>
+        <h1>Get thin and win</h1>
+        <p class="fs-4 fw-bold mb-0">Authoritatively parallel task pandemic bandwidth</p>
+        <p class="fs-4 fw-bold">whereas distinctive synergy.</p>
+        <div class="d-flex">
+        <button class="btn btn_hover btn_hover2 border-0 p-0" type="submit" style="background:#F63C25;">
+            <a href="contact.html" class="px-5 py-4 rounded-3 text-white fw-bold fs-6">View All Services
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+        </button>
+          <!-- <a href="https://youtu.be/7e90gBu4pas"><i class="fa-solid fa-play home_icon"></i></a> -->
+          <i class="fa-solid fa-play home_icon fs-4 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal11"></i>
+          <div class="modal fade" id="exampleModal11">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">  
+                  <div class="modal-body p-0">
+                      <div class="card cont9_inner_modal">
+                        <div class="row g-0">
+                          <div class="col">
+                            <div class="modal-header border-0 p-0">
+                              <button type="button" class="btn-close mt-0 me-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="card-body">
+                              <iframe src="about.html" style="width: 100%; height: 50vh;"></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container-fluid both_img">
+          <img src="img/hero4-2.jpg" class="img-fluid bg-img" alt="...">
+          <img src="img/overlay-bg.png" class="img-fluid overlay-bg" alt="...">
+      </div>
+      <div class="carousel-caption d-none d-md-block">
+        <p class="fs-4 fw-bold text-red mb-0 text-decoration-underline">Don't Stop till your success!</p>
+        <h1>Get Fit to Happy</h1>
+        <p class="fs-4 fw-bold mb-0">Authoritatively parallel task pandemic bandwidth</p>
+        <p class="fs-4 fw-bold">whereas distinctive synergy.</p>
+       <div class="d-flex">
+        <button class="btn btn_hover btn_hover2 border-0 p-0" type="submit" style="background:#F63C25;">
+            <a href="contact.html" class="px-5 py-4 rounded-3 text-white fw-bold fs-6">View All Services
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+        </button>
+          <!-- <a href="https://youtu.be/7e90gBu4pas"><i class="fa-solid fa-play home_icon"></i></a> -->
+          <i class="fa-solid fa-play home_icon fs-4 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal12"></i>
+          <div class="modal fade" id="exampleModal12">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">  
+                <div class="modal-body p-0">
+                <div class="card cont9_inner_modal">
+                  <div class="row g-0">
+                    <div class="col">
+                      <div class="modal-header border-0 p-0">
+                        <button type="button" class="btn-close mt-0 me-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="card-body">
+                        <iframe src="about.html" style="width: 100%; height: 50vh;"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container-fluid both_img">
+          <img src="img/hero4-3.jpg" class="img-fluid bg-img" alt="...">
+          <img src="img/overlay-bg.png" class="img-fluid overlay-bg" alt="...">
+      </div>
+      <div class="carousel-caption d-none d-md-block">
+        <p class="fs-4 fw-bold text-red mb-0 text-decoration-underline">Success comes for passion</p>
+        <h1>Be Fit For Win</h1>
+        <p class="fs-4 fw-bold mb-0">Authoritatively parallel task pandemic bandwidth</p>
+        <p class="fs-4 fw-bold">whereas distinctive synergy.</p>
+        <div class="d-flex">
+        <button class="btn btn_hover btn_hover2 border-0 p-0" type="submit" style="background:#F63C25;">
+            <a href="contact.html" class="px-5 py-4 rounded-3 text-white fw-bold fs-6">View All Services
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+        </button>
+         <!-- <a href="https://youtu.be/7e90gBu4pas"><i class="fa-solid fa-play home_icon"></i></a> -->
+          <i class="fa-solid fa-play home_icon fs-4 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal13"></i>
+          <div class="modal fade" id="exampleModal13">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">  
+                <div class="modal-body p-0">
+                <div class="card cont9_inner_modal">
+                  <div class="row g-0">
+                    <div class="col">
+                      <div class="modal-header border-0 p-0">
+                        <button type="button" class="btn-close mt-0 me-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="card-body">
+                        <iframe src="about.html" style="width: 100%; height: 50vh;"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- container 1 -->
+<!-- container 2 -->
+<div class="container container2 shadow-lg p-3 mb-5 bg-body rounded">
+  <div class="row cont_hight d-flex align-items-center justify-content-center">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <p class="mb-0 text-red">YOUR BODY INDEX</p>
+      <h2 class="fw-bold">Your Body Index</h2>
+      <div class="line"></div>
+    </div>
+    <div class="col-lg-8 col-md-12 col-sm-12">
+      <div class="row">
+      <div class="col-lg-4 col-md-4 py-3">
+        <h5>HEIGHT ( CM )</h5>
+        <input type="text" placeholder="Centimeter" class="py-3 text-center" name="" id="cm">
+      </div>
+      <div class="col-lg-4 col-md-4 py-3">
+        <h5>WEIGHT ( KG )</h5>
+        <input type="text" placeholder="KG" class="py-3 text-center" name="" id="kg">
+      </div>
+      <div class="col-lg-4 btn_hover col-md-4 py-3 d-flex align-items-center">
+      <button class="btn btn_hover border-0 rounded-0 p-0" type="submit" style="background:#F63C25;" onclick="calculate()">
+            <a href="#" class="rounded-0 text-white fw-bold fs-6 d-block">Calculate
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+      </button>
+      </div>
+      </div>
+      <div class="row">
+        <h6 class="text-secondary">Enter height and weight to get BMI </h6>
+        <h6 class="text-secondary" id="result"> </h6>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<!-- container 2 -->
+<!-- container 3 -->
+<div class="container container3">
+  <div class="heading">
+  <p class="text-center fs-5 text-red fw-bold">Our Amazing Services</p>
+  <h1 class="text-center" data-aos="slide-left">Service Features</h1>
+  </div>
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-12" data-aos="slide-down">
+      <div class="zoom">
+      <div class="container3_img">
+        <img src="img/service3-2.jpg" class="img-fluid">
+      </div>
+      <div class="card card_all">
+        <div class="card-body">
+          <h5 class="card-title fs-4 fw-bolder my-3">Special title treatment</h5>
+          <p class="card-text text-secondary">Collaboratively develop revolutionary initiatives through backend markets develop excellent schemas</p>
+          <div class="img_btn pb-3 d-flex justify-content-between">
+          <img src="img/service-2.png">
+          <a href="#" class="btn fw-bold btn btn-outline-danger px-3 pt-2 d-flex align-items-center">Read More
+            <i class="fa-solid fa-right-long px-1"></i>
+          </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-12">
+      <div class="zoom">
+      <div class="container3_img">
+        <img src="img/service3-1.jpg" class="img-fluid">
+      </div>
+      <div class="card card_all">
+        <div class="card-body">
+          <h5 class="card-title fs-4 fw-bolder my-3">Special title treatment</h5>
+          <p class="card-text text-secondary">Collaboratively develop revolutionary initiatives through backend markets develop excellent schemas</p>
+          <div class="img_btn pb-3 d-flex justify-content-between">
+          <img src="img/service-1.png">
+          <a href="#" class="btn fw-bold btn btn-outline-danger px-3 pt-2 d-flex align-items-center">Read More
+            <i class="fa-solid fa-right-long px-1"></i>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-4 col-md-12" data-aos="slide-up">
+      <div class="zoom">
+      <div class="container3_img">
+        <img src="img/service3-4.jpg" class="img-fluid">
+      </div>
+      <div class="card card_all">
+        <div class="card-body">
+          <h5 class="card-title fs-4 fw-bolder my-3">Special title treatment</h5>
+          <p class="card-text text-secondary">Collaboratively develop revolutionary initiatives through backend markets develop excellent schemas</p>
+          <div class="img_btn pb-3 d-flex justify-content-between">
+          <img src="img/service-4.png">
+          <!-- <button class="btn btn_hover ms-4 border-0 p-0" type="submit" style="background:#F63C25;">
+          <a href="#" class="btn fw-bold btn btn-outline-danger px-3 pt-2">Read More
+            <i class="fa-solid fa-right-long px-1"></i>
+          </a>
+        </button> -->
+          <a href="#" class="btn fw-bold btn btn-outline-danger px-3 pt-2 d-flex align-items-center">Read More
+            <i class="fa-solid fa-right-long px-1"></i>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- container 3 -->
+<!-- container 4 -->
+<div class="container-fluid container4 px-0">
+  <div class="img-fluid img_opacity">
+    <div class="img_opacity1">
+    <div class="container d-flex justify-content-between align-items-center" style="height: 300px;">
+    <div class="title">
+      <h1 class="text-white">Foucus On Your Own Body Shape</h1>
+    </div>
+    <div class="d-flex two_btn">
+     <button class="btn btn_red btn_hover btn_hover2 mt-3 rounded-3 border-0 p-0" type="submit">
+            <a href="contact.html" class="py-3 text-white fw-bold fs-6 d-block">Get Appointment
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+        </button>
+      <button class="btn btn-outline-light px-5 mx-2 mt-3" style="width: 250px; height: 56px;">
+        Get Free Checkup<i class="fa-solid fa-right-long px-1"></i>
+      </button>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- container 4 -->
+<!-- container 5 -->
+<div class="container container5">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-red">Why Choose Us</h5>
+          <h1 class="card-title mb-4">Keep Going With Your Passion</h1>
+          <p class="card-text text-secondary">Seamlessly benchmark inexpensive technology before team driven technology. Conveniently fashion empowered intellectual capital whereas high-payoff services.</p>
+          <hr>
+          <div class="d-flex mt-5">
+          <div class="icon_text_flex d-flex">
+          <i class="fa-solid fa-check fs-6 text-secondary fa-square-check"></i> 
+          <p class="fw-bold text-secondary">Body Fitness</p>
+          </div>
+          <div class="icon_text_flex ms-5 d-flex">
+          <i class="fa-solid fa-check fs-6 text-secondary fa-square-check"></i> 
+          <p class="fw-bold text-secondary">Health Care</p>
+          </div>
+          </div>
+
+          <div class="d-flex mb-4 mt-3">
+          <div class="icon_text_flex d-flex">
+          <i class="fa-solid fa-check fs-6 text-secondary fa-square-check"></i> 
+          <p class="fw-bold text-secondary">Body Building</p>
+          </div>
+          <div class="icon_text_flex ms-5 d-flex">
+          <i class="fa-solid fa-check fs-6 text-secondary fa-square-check"></i> 
+          <p class="fw-bold text-secondary">Fitness Care</p>
+          </div>
+          </div>
+          <button class="btn btn_hover border-0 rounded-3 p-0" type="submit" style="background:#F63C25;">
+            <a href="#" class="rounded-0 px-5 py-3 text-white fw-bold fs-6 d-block">Learn More
+              <i class="fa-solid fa-right-long"></i>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+<!-- right div -->
+    <div class="col-lg-6 col-md-12 right_div">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item shadow rounded">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h5>If I face issue then how can I contact with you?</h5>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fs-5">Progressively administrate enterprise wide initiatives without intuitive intellectual capital. Interactively click architect and mortar communities for cooperative testing procedures. Interactively optimize customer service whereas cross-media communities. Rapidiously leverage other impact.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item shadow rounded">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h5>When Your Consult Business Begins To Grow?</h5>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fs-5">Progressively administrate enterprise wide initiatives without intuitive intellectual capital. Interactively click architect and mortar communities for cooperative testing procedures. Interactively optimize customer service whereas cross-media communities. Rapidiously leverage other impact.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item shadow rounded">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h5>Common Misconcep About Building A Team?</h5>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p class="fs-5">Progressively administrate enterprise wide initiatives without intuitive intellectual capital. Interactively click architect and mortar communities for cooperative testing procedures. Interactively optimize customer service whereas cross-media communities. Rapidiously leverage other impact.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- container 5 -->
+<!-- container 6 -->
+<div class="container container6">
+  <div class="row">
+    <div class="col-lg-4 col-md-12" data-aos="fade-right">
+      <div class="cont6_div d-flex shadow rounded">
+          <img src="img/achive-1.png">
+          <div class="content2">
+            <h6 class="ps-5 fs-5 text-secondary">Good Result</h6>
+            <h5 class="ps-5 fs-1 fw-bolder">6000</h5>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="cont6_div d-flex shadow rounded">
+          <img src="img/achive-2.png">
+          <div class="content2">
+            <h6 class="ps-5 fs-5 text-secondary">Body Builder</h6>
+            <h5 class="ps-5 fs-1 fw-bolder">2000</h5>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12" data-aos="fade-left">
+      <div class="cont6_div d-flex shadow rounded">
+          <img src="img/achive-3.png">
+          <div class="content2">
+            <h6 class="ps-5 fs-5 text-secondary">Champion</h6>
+            <h5 class="ps-5 fs-1 fw-bolder">365</h5>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- container 6 -->
+<!-- container 7 -->
+<div class="container-fluid container7 px-0">
+  <div class="cont7_bg-img img-fluid">
+  <div class="heading">
+  <p class="text-center fs-5 text-red fw-bold">They Are Always Best</p>
+  <h1 class="text-center" data-aos="slide-right">Our Instructor</h1>
+  </div>
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 cont7_img">
+      <img src="img/team-4.jpg" class="img-fluid" alt="...">
+      <div class="both_btn">
+        <p class="bg-red py-2 text-center text-white" style="width:55%; margin: 0px;" data-aos="slide-left">Body Builder</p>
+        <a href="#" class="btn btn-danger cont7_btn px-5 py-3">Smith Low
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12 cont7_img">
+      <img src="img/team-2.jpg" class="img-fluid" alt="...">
+      <div class="both_btn">
+        <p class="bg-red py-2 text-center text-white" style="width:55%; margin: 0px;" data-aos="slide-left">Yoga Expert</p>
+        <a href="#" class="btn btn-danger cont7_btn px-5 py-3">Jully Adam
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12 cont7_img">
+      <img src="img/team-1.jpg" class="img-fluid" alt="...">
+      <div class="both_btn">
+        <p class="bg-red py-2 text-center text-white" style="width:55%; margin: 0px;" data-aos="slide-left">Trainer</p>
+        <a href="#" class="btn btn-danger cont7_btn px-5 py-3">David Smith
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- container 7 -->
+<!-- container 8 -->
+<div class="container-fluid container8 px-0">
+  <div class="img-fluid img_opacity">
+    <div class="img_opacity1">
+    <div class="container d-flex justify-content-center align-items-center">
+    <div class="title">
+      <h1 class="text-white fw-bold text-center">Need a Fitness Consultant? Call Us</h1>
+      <h1 class="text-white fw-bold text-center">+205 (2036) 20155</h1>
+    </div>
+    <div class="cont8_btn">
+      <button class="btn btn_hover btn_hover3 rounded-0 fw-bold btn-light px-0 mx-2 py-3 mt-5">
+        <a href="#" class="px-5 py-4 text-black fw-bold fs-6">Learn More
+              <i class="fa-solid fa-right-long px-1"></i>
+            </a>
+      </button>
+      <button class="btn btn_hover btn_hover3 rounded-0 fw-bold btn-light px-0 mx-2 py-3 mt-5">
+        <a href="#" class="px-5 py-4 text-red fw-bold fs-6">Make Appointment
+              <i class="fa-solid fa-right-long px-1"></i>
+            </a>
+      </button>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- container 8 -->
+<!-- container 9 -->
+<div class="container container9">
+  <div class="heading mb-5">
+    <p class="text-center fs-5 text-red fw-bold">You May Love These</p>
+    <h1 class="text-center" data-aos="slide-left">Featured Products</h1>
+  </div>
+  <div class="icons_position d-flex">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mt-4" data-aos="slide-up" data-aos-duration="1500">
+        <div class="card shadow rounded cont9_card mx-2" style="width: 18rem;">
+          <div class="position-relative">
+            <img src="img/product1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="text-center text-warning my-2">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <h5 class="card-text fw-bold text-center">Hoodie with zipper</h5>
+              <p class="fs-5 text-red text-center">$18.00</p>
+            </div>
+              <div class="rounded-circle badge2 px-3 py-4 text-center bg-red text-white position-absolute" style="width: 68px;">
+                <h6 class="m-0">Hot</h6>
+              </div>
+          </div>
+          <div class="cont9_icons"> 
+            <i class="fa-solid fa-cart-shopping p-3 m-1 shadow-sm rounded"></i>
+            <!-- Button trigger modal -->
+            <i class="fa-solid fa-magnifying-glass p-3 m-1 shadow-sm rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                    
+                    <div class="modal-body p-0">
+                    <!-- inner modal -->
+                    <!-- <div class="container-fluid"> -->
+                    <div class="card cont9_inner_modal">
+                      <div class="row g-0">
+                        <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-center">
+                          <img src="img/product1.jpg" class="card_modal_img img-fluid" alt="...">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="modal-header border-0 p-0">
+                            <button type="button" class="btn-close mt-0 me-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title fw-bolder fs-4">Album</h5>
+                            <div class="cont9_modal_stars mt-2 d-flex">
+                              <i class="fa-solid fa-star pt-1"></i><i class="fa-solid fa-star pt-1"></i><i class="fa-solid fa-star pt-1"></i><i class="fa-solid fa-star pt-1"></i><i class="fa-solid fa-star pt-1"></i>
+                              <p class="text-red ms-2">(1 customer review)</p>
+                            </div>
+                            <h5 class="text-secondary">$45.00</h5>
+                            <p class="card-text text-secondary">This is a simple product.</p>
+                            <div class="in_modal_btn">
+                            <input type="number" name="" placeholder="1" >
+                            <button class="btn btn_hover border-0 rounded-3 p-0 mb-1" type="submit" style="background:#F63C25;">
+                                <a href="#" class="rounded-3 py-2 px-2 text-white fw-bold fs-6 d-block">Add To Cart
+                                  <i class="fa-solid fa-right-long"></i>
+                                </a>
+                            </button>
+                            <i class="fa-regular fa-heart text-red ms-3 border-0"></i>
+                            </div>
+                            <h6 class="mt-3">SKU: <span class="text-secondary fs-6">Woo-Hoodie-With-Zipper</span></h6>
+                            <h6>Category: <span class="text-secondary fs-6">Hoodies</span></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- inner modal -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="fa-solid fa-heart p-3 m-1 shadow-sm rounded"></i>
+            <i class="fa-solid fa-layer-group p-3 m-1 shadow-sm rounded"></i>
+          </div>
+        </div>
+      </div>
+<!--  div 2 -->
+  <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mt-4" data-aos="slide-up" data-aos-duration="2000">
+    <div class="card shadow rounded cont9_card mx-2" style="width: 18rem;">
+      <img src="img/product2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-center text-warning my-2">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <h5 class="card-text fw-bold text-center">Logo Collection</h5>
+        <div class="d-flex justify-content-center">
+        <p class="fs-5 text-red text-center">$18.00</p>
+        <p class="fs-5 text-secondary text-center ms-1">$24.00</p>
+        </div>
+      </div>
+      <div class="cont9_icons"> 
+        <i class="fa-solid fa-cart-shopping p-3 m-1 shadow-sm rounded"></i>
+        <!-- Button trigger modal -->
+        <i class="fa-solid fa-magnifying-glass p-3 m-1 shadow-sm rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            <!-- Modal -->
+        <i class="fa-solid fa-heart p-3 m-1 shadow-sm rounded"></i>
+        <i class="fa-solid fa-layer-group p-3 m-1 shadow-sm rounded"></i>
+      </div>
+    </div>
+  </div>
+<!--  div 3 -->
+  <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mt-4" data-aos="slide-up" data-aos-duration="2500">
+    <div class="card shadow rounded cont9_card mx-2" style="width: 18rem;">
+      <img src="img/product3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-center text-warning my-2">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <h5 class="card-text fw-bold text-center">Long Sleeve Tee</h5>
+        <div class="d-flex justify-content-center">
+        <p class="fs-5 text-red text-center">$25.00</p>
+        <p class="fs-5 text-secondary text-center ms-1">$30.00</p>
+        </div>
+      </div>
+      <div class="cont9_icons"> 
+        <i class="fa-solid fa-cart-shopping p-3 m-1 shadow-sm rounded"></i>
+        <!-- Button trigger modal -->
+        <i class="fa-solid fa-magnifying-glass p-3 m-1 shadow-sm rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            <!-- Modal -->
+        <i class="fa-solid fa-heart p-3 m-1 shadow-sm rounded"></i>
+        <i class="fa-solid fa-layer-group p-3 m-1 shadow-sm rounded"></i>
+      </div>
+    </div>
+  </div>
+
+<!--  div 4 -->
+  <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mt-4" data-aos="slide-up" data-aos-duration="3000">
+    <div class="card shadow rounded cont9_card mx-2" style="width: 18rem;">
+    <div class="position-relative">
+      <img src="img/product4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="text-center text-warning my-2">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <h5 class="card-text fw-bold text-center">Album</h5>
+        <p class="fs-5 text-red text-center">$15.00</p>
+      </div>
+      <div class="rounded-circle badge2 px-3 py-4 text-center bg-red text-white position-absolute" style="width: 68px;">
+      <h6 class="m-0">Sale</h6>
+      </div>
+    </div>
+      <div class="cont9_icons"> 
+        <i class="fa-solid fa-cart-shopping p-3 m-1 shadow-sm rounded"></i>
+        <!-- Button trigger modal -->
+        <i class="fa-solid fa-magnifying-glass p-3 m-1 shadow-sm rounded" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            <!-- Modal -->
+        <i class="fa-solid fa-heart p-3 m-1 shadow-sm rounded"></i>
+        <i class="fa-solid fa-layer-group p-3 m-1 shadow-sm rounded"></i>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+<!-- container 9 -->
+<!-- container 10 -->
+<div class="container-fluid container10">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-center justify-content-center mt-5">
+      <img src="img/brand-3.png" class="img-fluid" alt="...">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-center justify-content-center mt-5">
+      <img src="img/brand-4.png" class="img-fluid" alt="...">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-center justify-content-center mt-5">
+      <img src="img/brand-1.png" class="img-fluid" alt="...">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-center justify-content-center mt-5">
+      <img src="img/brand-2.png" class="img-fluid" alt="...">
+    </div>
+  </div>
+</div>
+</div>
+<!-- container 10 -->
+<!-- container 11-->
+<div class="container container11">
+  <div class="container">
+  <div class="heading">
+  <p class="text-center fs-5 text-red fw-bold">Important Writing From Us</p>
+  <h1 class="text-center mb-5" data-aos="slide-right">Our Latest News</h1>
+  </div>
+  <div class="row pt-3">
+    <div class="col cont11">
+      <div class="container11_img">
+        <img src="img/home-img1.jpg" class="img-fluid">
+      </div>
+      <div class="p-4 rounded-0 shadow p-3 mb-5 bg-body rounded cont11_div">
+      <div class="d-flex">
+      <div class="d-flex">
+        <i class="fa-regular fa-comments text-red mt-1 hover_red"></i>
+        <p class="text-secondary ms-2 hover_red">3 Comments</p>
+      </div>
+      <div class="d-flex ms-4">
+        <i class="fa-solid fa-calendar-days text-red mt-1 hover_red"></i>
+        <p class="text-secondary ms-2 hover_red">Dec 01,2021</p>
+      </div>
+      </div>
+      <h4 class="hover_red">How help yoga togetrid from fatty skin for</h4>
+      <hr>
+      <div class="d-flex cont11_none_img">
+        <img src="img/none1.png" class="img-fluid rounded-3">
+        <div class="ms-3">
+          <p class="text-red mb-0">Posted by</p>
+          <h5 class="fw-bold hover_red">Gima</h5>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="col cont11">
+      <div class="container11_img" >
+        <img src="img/home-img2.jpg" id="cont11" class="img-fluid">
+      </div>
+      <div class="p-4 rounded-0 shadow p-3 mb-5 bg-body rounded cont11_div">
+      <div class="d-flex">
+      <div class="d-flex">
+        <i class="fa-regular fa-comments text-red mt-1 hover_red"></i>
+        <p class="text-secondary ms-2 hover_red">3 Comments</p>
+      </div>
+      <div class="d-flex ms-4">
+        <i class="fa-solid fa-calendar-days text-red mt-1 hover_red"></i>
+        <p class="text-secondary ms-2 hover_red">Dec 01,2021</p>
+      </div>
+      </div>
+      <h4 class="hover_red">Credibly procra stinate portu nities through echni cally</h4>
+      <hr>
+      <div class="d-flex cont11_none_img">
+        <img src="img/none1.png" class="img-fluid rounded-3">
+        <div class="ms-3">
+          <p class="text-red mb-0">Posted by</p>
+          <h5 class="fw-bold hover_red">Gima</h5>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="col">
+      <div class="col cont11">
+      <div class="container11_img">
+        <img src="img/home-img3.jpg" class="img-fluid">
+      </div>
+      <div class="p-4 rounded-0 shadow p-3 mb-5 bg-body rounded cont11_div">
+      <div class="d-flex">
+      <div class="d-flex">
+        <i class="fa-regular fa-comments text-red mt-1 hover_red"></i>
+        <p class="text-secondary ms-2 hover_red">3 Comments</p>
+      </div>
+      <div class="d-flex ms-4">
+        <i class="fa-solid fa-calendar-days text-red mt-1 hover_red"></i>
+        <p class="text-secondary ms-2 hover_red">Dec 01,2021</p>
+      </div>
+      </div>
+      <h4 class="hover_red">Easy muscle gain technics by using light Equipments</h4>
+      <hr>
+      <div class="d-flex cont11_none_img">
+        <img src="img/none1.png" class="img-fluid rounded-3">
+        <div class="ms-3">
+          <p class="text-red mb-0">Posted by</p>
+          <h5 class="fw-bold hover_red">Gima</h5>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- container 11-->
+
+<!-- footer -->
+<footer>
+<div class="container-fluid container12 px-0">
+<div class="footer_bg">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mt-3">
+      <h2 class="fw-bold">About Us</h2>
+      <div class="my-4">
+      <p class="text-secondary fs-5">Credibly procrastinate portunities through echni cally sound technologies. Develop outsourcing through web services transform maintain integrated customer service...</p>
+      <div class="cont12_icons"> 
+        <a href="#"><i class="fa-brands fa-facebook-f p-3 m-1 shadow-sm rounded"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter p-3 m-1 shadow-sm rounded"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram p-3 m-1 shadow-sm rounded"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin p-3 m-1 shadow-sm rounded"></i></a>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12 mt-3">
+      <h2 class="fw-bold">All Services</h2>
+      <div class="d-flex">
+      <div class="my-3" style="width: 150px;">
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary ps-2">Body Health</h6></a>
+      </div>
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary ps-2">Mental Care</h6></a>
+      </div>
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary ps-2">Muscle Gain</h6></a>
+      </div>
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary ps-2">Fitness Mind</h6></a>
+      </div>
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary ps-2">Fresh Body</h6></a>
+      </div>
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary ps-1">Daily Routine</h6></a>
+      </div>
+      </div>
+
+      <div class="ms-5 my-3">
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary px-2">Muscle Gain</h6></a>
+      </div>
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary px-2">Body Health</h6></a>
+      </div>
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary px-2">Mental Care</h6></a>
+      </div>
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary px-2">Fat Burn</h6></a>
+      </div>
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary px-2">Yoga Excercise</h6></a>
+      </div>
+      <div class="d-flex p-1 mid_div_hover">
+        <i class="fa-solid fa-right-long text-secondary mt-1"></i>
+        <a href="#"><h6 class="fw-bold text-secondary px-2">Finish Fast</h6></a>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12 mt-3">
+      <h2 class="fw-bold">News Feed</h2>
+        <div class="row">
+          <div class="col-12 d-flex my-3">
+            <img src="img/footer1.jpg" class="img-fluid rounded-start" alt="...">
+            <div class="px-4 foot_third_div">
+              <a href="#" class="text-decoration-none text-secondary"><h5>Credibly procra stinate portu nities</h5></a>
+              <div class="d-flex foot_third_date">
+                <a href="#"><i class="fa-solid fa-calendar-days mt-1 text-secondary fw-bold"></i></a>
+                <a href="#" class="text-decoration-none"><p class="ps-2 text-secondary fw-bold">01 December,2022</p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex my-3">
+            <img src="img/footer2.jpg" class="img-fluid rounded-start" alt="...">
+            <div class="px-4 foot_third_div">
+              <a href="#" class="text-decoration-none text-secondary"><h5>Service enable process is to</h5></a>
+              <div class="d-flex foot_third_date">
+                <a href="#"><i class="fa-solid fa-calendar-days mt-1 text-secondary fw-bold"></i></a>
+                <a href="#" class="text-decoration-none"><p class="ps-2 text-secondary fw-bold">01 December,2022</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid footer2 d-flex justify-content-center align-items-center pb-3 pt-4">
+  <div class="d-flex">
+  <p class="text-secondary">Copyright</p>
+  <i class="fa-regular fa-copyright mt-1 px-1"></i>
+  <p class="text-secondary">2022 <a href="#" class="text-dark fw-bold">Gimia</a> All Rights Reserved by <a href="#" class="text-dark fw-bold">Angfuzsoft</a></p>
+  </div>
+</div>
+</div>
+</footer>
+<!-- footer -->
+
+<!-- scroll btn -->
+<div class="container-fluid">
+  
+</div>
+<!-- scroll btn -->
+
+
+
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/home.js"></script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 120,
+      duration: 1500,
+      mirror: true,
+    });
+  </script>
+</body>
+</html>

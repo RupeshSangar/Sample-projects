@@ -1,0 +1,344 @@
+body{
+    /*height: 5000px;*/
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+/* btn */
+.btn_hover{
+    position: relative;
+    overflow: hidden;
+}
+.btn_hover a{
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+.btn_hover a:before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    /*float: right;*/
+    background-color: black;
+    /*border-radius: 10px;*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn_hover a:hover:before{
+    width: 100%;
+    left: 0;
+}
+.text-red{
+    color: red !important;
+}
+.bg-red{
+    background-color: red !important;
+}
+/* btn */
+
+.navbar{
+    background: transparent !important;
+    /*position: absolute;*/
+    z-index: 2 !important;
+}
+.nav_container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*position: absolute;*/
+    padding: 0px 40px;
+}
+.preload-bg{
+    position: absolute;
+    left: 40px;
+}
+.logo_div h6{
+    font-size: 45px;
+    margin: 0px;
+}
+.logo_div h5{
+    margin-top: -7px !important;
+    font-size: 18px;
+}
+.nav_menu .nav-item a{
+    margin: 0px 14px;
+    color: black !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+.nav_menu .nav-item a:hover{
+    color: #E6311D !important;
+}
+
+.bg_img_opacity{
+    position: relative;
+}
+.bg_img_opacity .bg_img_1{
+    height: 540px;
+    width: 100%;
+}
+.img_opacity{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: auto;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.background .bg_text{
+    position: absolute;
+    top: 40%;
+    left: 18%;
+}
+.bg_text h1{
+    font-size: 65px !important;
+}
+
+@media screen and (max-width: 1400px){
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.nav_menu{
+    flex-direction: column;
+    margin: auto;
+}
+.nav_menu form{
+    padding-left: 70px;
+    padding-top: 10px;
+}
+}
+
+@media screen and (max-width: 988px){
+.nav_menu form{
+    margin: 20px 100px 20px 60px;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+.nav_menu form button{
+    margin-left: 0px !important;
+}
+.nav_menu button a{
+    display: block;
+}
+.bg_img_opacity {}
+.bg_img_opacity .bg_img_1{
+    height: 300px !important;
+    width: 100% !important;
+}
+.background .bg_text{
+    top: 25%;
+    left: 8%;
+}
+.bg_text h1{
+    font-size: 45px !important;
+}
+}
+/* background */
+/* container 1 */
+.container1{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.cont1_img_badges button{
+    top: 5%;
+    left: 5%;
+}
+.cont1_img_badges .badge2{
+    top: 5%;
+    right: 5%;
+}
+.container1 .red_heart{
+    background-color: red !important;
+    transition: 0.5s;
+}
+.container1 .red_heart:hover{
+    background-color: black !important;
+    color: white !important;
+}
+/* container 1 */
+/* container 2 */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    border: none !important;
+    border-bottom: 2px solid red !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active:hover{
+
+}
+.container2 .nav-link{
+    color: black !important;
+    border: none !important;
+}
+.card2:hover{
+    background-color: #F7F7F7;
+}
+.cont2_review{
+    background-color: #F7F7F7;
+    padding: 70px;
+}
+.bg_grey{
+    background-color: #F7F7F7;
+}
+.cont2_review .icon_margin{
+    margin-top: 20px;
+    margin-left: -30px;
+}
+@media screen and (max-width: 988px){
+.cont2_review .icon_margin{
+    display: none !important;
+}
+}
+/* container 2 */
+/* container 3 */
+.container3{
+    margin-top: 130px;
+    margin-bottom: 150px;
+}
+.container3 .red_line{
+    height: 4px;
+    width: 60px;
+    background: red;
+}
+
+.icons_position{
+    position: relative;
+}
+.cont9_card{
+    border-radius: 10px !important;
+}
+.cont9_card:hover{
+
+}
+.cont9_card .card-img-top{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none !important;
+}
+.cont9_icons{
+    position: absolute;
+    top: 30%;
+    bottom: 0px;
+    left: 16%;
+    /*transition: 1s;*/ 
+}
+.cont9_icons i{
+    background-color: white;
+    color: gray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+    /*transform-origin: top;*/
+}
+.cont9_icons i:hover{
+    background-color: red !important;
+    color: white !important;
+    border-color: red;
+}
+.cont9_card:hover .cont9_icons i{
+    visibility: visible;
+    transition: 0.5s;
+    transform: scale(1);
+
+}
+.card_modal_img{
+    height: 400px;
+    width: 400px;
+}
+.cont9_inner_modal .card-body{
+    /*width: 18rem;*/
+    margin-left: 20px;
+}
+.cont9_modal_stars i{
+    border: none !important;
+    color: #F9C43B;
+}
+.cont9_inner_modal input{
+    text-align: center;
+    width: 60px;
+    height: 40px;
+}
+.in_modal_btn i{
+    border: none !important;
+    background-color: transparent !important;
+    color: white;
+}
+.in_modal_btn i:hover{
+    background-color: black !important;
+}
+.container3 .badge2{
+    top: 5%;
+    right: 5%;
+}
+/* container 3 */
+/* footer */
+.container12{
+    background-color: #FBFBFB;
+}
+.container12 .container{
+    padding-top: 90px !important;
+}
+.footer_bg{
+    z-index: 6 !important;
+    height: 480px;
+    width: 100%;
+    background-position: center;
+    background-image: url(img/bg-6.png);
+}
+.cont12_icons i{
+    background-color: white;
+    color: gray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.cont12_icons i:hover{
+    background-color: #F63C25;
+    color: white;
+}
+.mid_div_hover i{
+    transition: 0.5s;
+}
+.mid_div_hover:hover i{
+    margin-left: 8px;
+    color: red !important;
+}
+.mid_div_hover a{
+    text-decoration: none;
+}
+.mid_div_hover:hover h6{
+    color: red !important;
+}
+.foot_third_div h5:hover{
+    color: red;
+    transition: 0.5s;
+}
+.foot_third_date:hover i{
+    color: red !important;
+    transition: 0.5s;
+}
+.foot_third_date:hover p{
+    color: red !important;
+    transition: 0.5s;
+}
+.footer2{
+    background-color: #EEEEEE;
+}
+
+@media screen and (max-width: 988px){
+.footer2{
+    margin-top: 550px;
+}
+.footer_bg{
+    background-position: left;
+}
+}
+/* footer */
+
+.modal{animation:modal .7s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes modal{0%{transform:translateY(-600px) rotateX(-30deg) scale(0);transform-origin:50% 100%;opacity:0}100%{transform:translateY(0) rotateX(0) scale(1);transform-origin:50% 1400px;opacity:1}}
